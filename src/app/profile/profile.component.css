@@ -1,0 +1,140 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a01919;
+}
+.profile-card {
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background: #f7f5f5;
+  border-radius: 20px;
+  padding: 25px;
+  left: 50px;
+  bottom:20%;
+  top:100%;
+  right: 60%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translateY(15%);
+  
+}
+
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color:#803466;
+}
+.image {
+  position: relative;
+  height: 160px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #923175;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  bottom:10px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  border: 2px solid #923175;
+  
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #080000;
+}
+
+
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color:#8f2660;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .button:hover {
+  background-color: #2f4788;
+}
+
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    
+    font-weight: inherit;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: content-box;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #0066cc;
+  }
+  
+  .form-control:invalid {
+    border-color: #b15386;
+  }
+  
+  .form-control:valid {
+    border-color: #322d61;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    margin-top: 5px;
+  }
+
+
+
